@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Footer from './components/component/common/footer';
+import Header from './components/component/common/header';
+import MainLayout from './components/component/common/layouts/main';
+import ShopContainer from './components/containers/ShopContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => (
+  <>
+    <MainLayout>
+      <ShopContainer />
+    </MainLayout>
+  </>
+);
 
 export default App;

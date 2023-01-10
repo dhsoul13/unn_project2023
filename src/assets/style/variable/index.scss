@@ -1,0 +1,65 @@
+$color-main-1v: #4e8eff;
+$color-main-2v: #003ba3;
+$color-second: #ffffff;
+
+$s16: 1rem;
+$s18: 1.125rem;
+$s20: 1.25rem;
+
+/// effect
+$effect: 0.5s ease all;
+/// max-width
+
+$size-auto: auto;
+$size-540: 540px;
+$size-720: 720px;
+$size-960: 960px;
+$size-1140: 1140px;
+
+///общие классы
+.container {
+  width: $size-1140;
+  margin: auto;
+}
+
+.link {
+  font-size: $s18;
+  cursor: pointer;
+  font-weight: 500;
+  transition: $effect;
+  &:hover {
+    color: $color-main-2v;
+  }
+}
+
+.effects {
+  cursor: pointer;
+  transition: $effect;
+  &:hover {
+    color: $color-main-2v;
+  }
+  &:active {
+    color: $color-main-2v;
+  }
+}
+
+.effects-svg svg {
+  cursor: pointer;
+  transition: $effect;
+  &:hover {
+    fill: $color-main-2v;
+    transition: $effect;
+    path {
+      transition: $effect;
+      fill: $color-main-2v;
+    }
+  }
+  &:active {
+    transition: $effect;
+    fill: $color-main-2v;
+    path {
+      transition: $effect;
+      fill: $color-main-2v;
+    }
+  }
+}

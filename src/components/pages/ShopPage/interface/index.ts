@@ -1,3 +1,6 @@
-export interface IShop {
-  data: object[];
+import { IProduct } from '../../../containers/ShopContainer/interface';
+
+export interface IProductProbs {
+  data?: IProduct[];
+  loading?: boolean;
 }

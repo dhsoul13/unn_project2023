@@ -3,6 +3,8 @@ import Search from '../../../../assets/svgs/search';
 import User from '../../../../assets/svgs/user';
 import logo from '../../../../assets/imgs/logo.png';
 import Logo from '../../../../assets/svgs/logo';
+import Like from '../../../../assets/svgs/like';
+import BasketSvg from '../../../../assets/svgs/basket';
 
 const Header = () => (
   <div className="header">
@@ -24,10 +26,10 @@ const Header = () => (
               <User />
             </li>
             <li className="header__svg effects-svg">
-              <Search />
+              <Like />
             </li>
             <li className="header__svg effects-svg">
-              <Search />
+              <BasketSvg />
             </li>
           </ul>
         </div>

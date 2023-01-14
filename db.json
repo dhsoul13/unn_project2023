@@ -1,0 +1,154 @@
+{
+  "product": [
+    {
+      "id": 0,
+      "type": "smartphone",
+      "title": "IPhone 10",
+      "price": 40000,
+      "count": 13,
+      "brand": "apple",
+      "model": "10",
+      "tegs": ["apple"],
+      "raiting": 3.4,
+      "reviews": [
+        {
+          "id": 0,
+          "user": 0,
+          "text": "ireofjdkfj"
+        }
+      ],
+      "imgs": [],
+      "discount": {
+        "isDiscount": true,
+        "count": 10
+      },
+      "property": {
+        "color": {
+          "title": "Черный",
+          "codeColor": "#000000"
+        },
+        "storage": 32
+      }
+    },
+    {
+      "id": 1,
+      "type": "smartphone",
+      "title": "IPhone 11",
+      "price": 55000,
+      "brand": "apple",
+      "count": 13,
+      "model": "11",
+      "tegs": ["apple"],
+      "raiting": 3.4,
+      "reviews": [
+        {
+          "id": 0,
+          "user": 0,
+          "text": "ireofjdkfj"
+        }
+      ],
+      "imgs": [],
+      "discount": {
+        "isDiscount": true,
+        "count": 15
+      },
+      "property": {
+        "color": {
+          "title": "Черный",
+          "codeColor": "#000000"
+        },
+        "storage": 32
+      }
+    },
+    {
+      "id": 2,
+      "type": "smartphone",
+      "title": "IPhone 11 Pro",
+      "model": "11 Pro",
+      "price": 90000,
+      "brand": "apple",
+      "tegs": ["apple"],
+      "count": 13,
+      "raiting": 3.4,
+      "reviews": [
+        {
+          "id": 0,
+          "user": 0,
+          "text": "ireofjdkfj"
+        }
+      ],
+      "imgs": [],
+      "discount": {
+        "isDiscount": false,
+        "count": 0
+      },
+      "property": {
+        "color": {
+          "title": "Черный",
+          "codeColor": "#000000"
+        },
+        "storage": 32
+      }
+    },
+    {
+      "id": 3,
+      "type": "smartphone",
+      "title": "IPhone 12",
+      "model": "12",
+      "price": 60000,
+      "brand": "apple",
+      "tegs": ["apple"],
+      "count": 13,
+      "raiting": 3.4,
+      "reviews": [
+        {
+          "id": 0,
+          "user": 0,
+          "text": "ireofjdkfj"
+        }
+      ],
+      "imgs": [],
+      "discount": {
+        "isDiscount": false,
+        "count": 0
+      },
+      "property": {
+        "color": {
+          "title": "Черный",
+          "codeColor": "#000000"
+        },
+        "storage": 32
+      }
+    },
+    {
+      "id": 4,
+      "type": "smartphone",
+      "title": "IPhone 12 Pro",
+      "model": "12 Pro",
+      "price": 100000,
+      "brand": "apple",
+      "tegs": ["apple"],
+      "raiting": 3.4,
+      "count": 13,
+      "reviews": [
+        {
+          "id": 0,
+          "user": 0,
+          "text": "ireofjdkfj"
+        }
+      ],
+      "imgs": [],
+      "discount": {
+        "isDiscount": false,
+        "count": 0
+      },
+      "property": {
+        "color": {
+          "title": "Черный",
+          "codeColor": "#000000"
+        },
+        "storage": 32
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+.form {
+  &__title {
+    font-weight: 600;
+    text-align: left;
+    margin: 0px 0px 20px 0px;
+    font-size: $s20;
+  }
+  &__checkbox-contents {
+    width: 100%;
+  }
+  &__checkbox-content {
+    width: 100%;
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  fo h2 {
+    text-transform: capitalize;
+  }
+}

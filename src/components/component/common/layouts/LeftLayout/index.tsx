@@ -1,4 +1,5 @@
 import React from 'react';
+import BreadCrumbs from '../../breadCrumbs';
 import { ILeftLayout } from './interface';
 
 const LeftLayout: React.FC<ILeftLayout> = ({ functional, children, title, classList }) => (
@@ -8,7 +9,7 @@ const LeftLayout: React.FC<ILeftLayout> = ({ functional, children, title, classL
         <div className={`${classList}__header left-layout__header`}>
           <div className={`${classList}__header-left`}>
             <div className={`${classList}__header-breadCrumbs  left-layout__header-breadCrumbs`}>
-              Тут будут хлебные крошки
+              <BreadCrumbs />
             </div>
             <h2 className={`${classList}__header-title  left-layout__header-title`}>{title}</h2>
           </div>

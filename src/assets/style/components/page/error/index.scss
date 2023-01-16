@@ -1,0 +1,26 @@
+.error {
+  height: 100%;
+  &__container {
+    height: 100%;
+    width: calc(min(600px, 90%));
+  }
+  &__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &__text {
+    margin: 20px 0px;
+    font-size: $s18;
+    font-weight: 300;
+  }
+  &__button {
+    width: 60%;
+  }
+}

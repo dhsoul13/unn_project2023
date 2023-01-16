@@ -1,0 +1,46 @@
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+.link {
+  font-size: 1.125rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.5s ease all;
+}
+.link:hover {
+  color: #003ba3;
+}
+
+.effects {
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+.effects:hover {
+  color: #003ba3;
+}
+.effects:active {
+  color: #003ba3;
+}
+
+.effects-svg svg {
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+.effects-svg svg:hover {
+  fill: #003ba3;
+  transition: 0.5s ease all;
+}
+.effects-svg svg:hover path {
+  transition: 0.5s ease all;
+  fill: #003ba3;
+}
+.effects-svg svg:active {
+  transition: 0.5s ease all;
+  fill: #003ba3;
+}
+.effects-svg svg:active path {
+  transition: 0.5s ease all;
+  fill: #003ba3;
+}/*# sourceMappingURL=index.css.map */

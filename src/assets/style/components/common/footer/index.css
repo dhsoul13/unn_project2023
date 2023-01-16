@@ -1,0 +1,26 @@
+.footer__content {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__section-1 {
+  display: flex;
+  gap: 50px;
+}
+.footer__section-1 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.footer__section-2 ul {
+  display: flex;
+  gap: 13px;
+}
+.footer__section-2 ul li {
+  height: 25px;
+  width: 25px;
+}
+.footer__section-2 ul li svg {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */

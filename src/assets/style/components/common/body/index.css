@@ -1,0 +1,8 @@
+.body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.body__content {
+  flex: auto;
+}/*# sourceMappingURL=index.css.map */

@@ -7,4 +7,5 @@ export enum EButton {
 export interface IButton {
   text: string;
   type: EButton;
+  onClick?: () => any;
 }

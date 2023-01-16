@@ -1,0 +1,14 @@
+.button {
+  width: 100%;
+  padding: 15px 0px;
+  background-color: $color-main-1v;
+  color: #fff;
+  font-size: $s16;
+  font-weight: 700;
+  border-radius: 3px;
+  transition: $effect;
+  &:hover {
+    transition: $effect;
+    background-color: $color-main-2v;
+  }
+}

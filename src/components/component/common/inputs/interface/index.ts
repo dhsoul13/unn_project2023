@@ -5,6 +5,11 @@ export interface IInput {
   title?: string;
   id: string;
   name: string;
+}
+
+export interface ICheckBox {
+  name: string;
   value: string;
-  onChange: any;
+  text: string;
+  type: string;
 }

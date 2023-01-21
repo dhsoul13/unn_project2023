@@ -79,8 +79,8 @@
       ],
       "imgs": [],
       "discount": {
-        "isDiscount": false,
-        "count": 0
+        "isDiscount": true,
+        "count": 30
       },
       "property": {
         "color": {
@@ -109,8 +109,8 @@
       ],
       "imgs": [],
       "discount": {
-        "isDiscount": false,
-        "count": 0
+        "isDiscount": true,
+        "count": 45
       },
       "property": {
         "color": {
@@ -139,8 +139,8 @@
       ],
       "imgs": [],
       "discount": {
-        "isDiscount": false,
-        "count": 0
+        "isDiscount": true,
+        "count": 10
       },
       "property": {
         "color": {

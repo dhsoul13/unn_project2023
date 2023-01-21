@@ -1,10 +1,45 @@
 import Arrows from 'assets/svgs/arrows';
 import { clickOnLinks } from 'utils/clickOnLinksClick';
 
-const helpersMas = [
+const helpersMas: Array<{
+  name: string;
+  rusname: string;
+}> = [
   {
     name: 'shop',
     rusname: 'Магазин',
+  },
+  {
+    name: 'info',
+    rusname: 'Информация',
+  },
+  {
+    name: 'ourshop',
+    rusname: 'Наши магазины',
+  },
+  {
+    name: 'about',
+    rusname: 'О нас',
+  },
+  {
+    name: 'delivery',
+    rusname: 'Доставка',
+  },
+  {
+    name: 'question',
+    rusname: 'Задать нам вопрос',
+  },
+  {
+    name: 'entrance',
+    rusname: 'Вход в систему',
+  },
+  {
+    name: 'auth',
+    rusname: 'Авторизация',
+  },
+  {
+    name: 'reg',
+    rusname: 'Регистрация',
   },
 ];
 
@@ -23,8 +58,8 @@ export const GetStrBreadCrumbs = ({ str, navigate }: { str: string; navigate: an
         }}>
         Главная
       </li>
-      {mas.map((el) => (
-        <li className="breadcrumbs__item">
+      {mas.map((el, index) => (
+        <li className="breadcrumbs__item" key={index}>
           <div>
             <Arrows />
           </div>

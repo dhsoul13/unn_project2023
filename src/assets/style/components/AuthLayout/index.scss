@@ -1,0 +1,36 @@
+.authlayout {
+  &__title {
+    margin: 30px 0px 15px 0px;
+    font-size: $s20;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 0px 5px;
+  }
+  &__elem {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    a {
+      color: #fff;
+      background-color: $color-main-1v;
+      padding: 5px 50px;
+      border-radius: 5px 5px 0px 0px;
+      transition: $effect;
+      &:hover {
+        transition: $effect;
+        background-color: $color-main-2v;
+      }
+      &:active {
+        transition: $effect;
+        background-color: $color-main-2v;
+      }
+    }
+  }
+  &__body {
+    width: calc(min(400px, 90%));
+    margin: 0 auto;
+  }
+}

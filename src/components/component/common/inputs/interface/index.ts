@@ -5,6 +5,8 @@ export interface IInput {
   title?: string;
   id: string;
   name: string;
+  error?: boolean;
+  type?: string;
 }
 
 export interface ICheckBox {

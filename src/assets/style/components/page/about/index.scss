@@ -1,0 +1,20 @@
+.about {
+  &__title {
+    font-weight: 600;
+    font-size: $s18;
+  }
+  &__info {
+    margin: 20px 0px;
+    font-size: $s16;
+    line-height: 22px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0px;
+    span {
+      font-weight: 700;
+      margin-right: 10px;
+    }
+  }
+}

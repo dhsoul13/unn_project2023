@@ -5,6 +5,7 @@ interface Input {
   name: string;
   placeholder: string;
   title: string;
+  type?: string;
 }
 
 interface ICheckBox {
@@ -14,7 +15,10 @@ interface ICheckBox {
 }
 
 export interface IForm {
+  onSubmit: (value: any, action: any) => any;
   children?: React.ReactElement;
+  initialValues: {};
+  schema: {};
   inputs?: Input[];
   checkbox?: Array<{
     title: string;

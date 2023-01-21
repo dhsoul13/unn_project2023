@@ -1,5 +1,6 @@
 import { Formik } from 'formik';
 import React from 'react';
+import { showError } from 'utils/showError';
 import AccordionContainer from '../accordion';
 import Button from '../button';
 import { EButton } from '../button/interface';
@@ -7,20 +8,31 @@ import CheckBox from '../inputs/CheckBoxs';
 import Input from '../inputs/TextInput';
 import { IForm } from './interface';
 
-const Form: React.FC<IForm> = ({ children, inputs, checkbox }) => (
+const Form: React.FC<IForm> = ({ children, inputs, checkbox, initialValues, schema, onSubmit }) => (
   <>
     <Formik
-      initialValues={{}}
+      initialValues={initialValues}
+      validationSchema={schema}
       onSubmit={(value, actions) => {
-        console.log(value);
-      }}>
+        onSubmit(value, actions);
+      }}
+      validateOnBlur={false}
+      validateOnChange={false}>
       {(probs) => (
         <form onSubmit={probs.handleSubmit} className="form">
           <h2 className="form__title">{children}</h2>
           <div className="form__input-contents">
             {inputs?.map((el, index) => (
               <div key={index} className="form__input-content">
-                <Input name={el.name} title={el.title} placeholder={el.placeholder} id={el.id} />
+                <Input
+                  name={el.name}
+                  title={el.title}
+                  placeholder={el.placeholder}
+                  id={el.id}
+                  error={showError(probs.errors, el.id).isError}
+                  type={el.type}
+                />
+                {showError(probs.errors, el.id).elem}
               </div>
             ))}
           </div>

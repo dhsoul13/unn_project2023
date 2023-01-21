@@ -8,7 +8,7 @@ const ErrorPage: React.FC<IErrorPage> = ({ onClick }) => (
     <div className="error__container container">
       <div className="error__content">
         <h2 className="error__title">Ошибка: 404</h2>
-        <p className="error__text">Похоже что вы исчите на нашем сайте - нет(</p>
+        <p className="error__text">Похоже что вы ищете на нашем сайте - нет(</p>
         <div className="error__button">
           <Button
             text={'Ввернуться назад'}

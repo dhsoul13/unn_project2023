@@ -1,5 +1,10 @@
+import InfoPage from 'components/pages/InfoPage';
 import React from 'react';
 
-const InfoContainer = () => <div>InfoContainer</div>;
+const InfoContainer = () => (
+  <>
+    <InfoPage />
+  </>
+);
 
 export default InfoContainer;

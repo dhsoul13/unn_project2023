@@ -51,7 +51,12 @@ const FilterProduct = () => (
               },
             ],
           },
-        ]}>
+        ]}
+        initialValues={{}}
+        schema={{}}
+        onSubmit={(value) => {
+          console.log('yes');
+        }}>
         <>Фильтер</>
       </Form>
     </div>

@@ -1,0 +1,18 @@
+.question {
+  &__title {
+    font-weight: 700;
+    font-size: $s18;
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__form {
+    width: calc(min(500px, 90%));
+  }
+  &__info {
+    margin-top: 30px;
+    font-weight: 300;
+  }
+}

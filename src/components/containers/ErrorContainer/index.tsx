@@ -10,10 +10,14 @@ const ErrorContainer = () => {
     navigate('/', { replace: true });
   };
   useEffect(() => {
-    timer({
+    const time = timer({
       callback: handlerClick,
       time: 30000,
     });
+
+    return () => {
+      clearTimeout(time);
+    };
   }, []);
 
   return (

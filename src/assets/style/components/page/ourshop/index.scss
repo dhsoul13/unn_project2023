@@ -1,0 +1,43 @@
+.ourshop {
+  &__container {
+    height: 100%;
+  }
+  &__content {
+    height: 100%;
+  }
+  &__header {
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: $s18;
+  }
+  &__sitebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0px;
+  }
+  &__search {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  &__search-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__element {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    gap: 0px 10px;
+    grid-template-rows: 500px;
+  }
+  &__map {
+    height: 100%;
+  }
+}

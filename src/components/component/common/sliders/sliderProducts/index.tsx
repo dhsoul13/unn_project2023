@@ -14,7 +14,7 @@ const SliderProduct = () => (
     centeredSlides={true}
     loop={true}
     autoplay={{
-      delay: 300,
+      delay: 3000,
       disableOnInteraction: true,
     }}
     navigation={true}

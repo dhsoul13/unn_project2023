@@ -4,11 +4,11 @@ import React from 'react';
 import { IQuestionPage } from './interface';
 
 const QuestionPage: React.FC<IQuestionPage> = ({ value, onSubmit }) => (
-  <div className="question">
+  <section className="question">
     <div className="question__container container">
       <div className="question__content">
-        <h2 className="question__title">Задать вопрос</h2>
-        <div className="question__body">
+        <h2 className="question__title title">Задать вопрос</h2>
+        <section className="question__body">
           <div className="question__form">
             <Form
               inputs={[
@@ -41,10 +41,10 @@ const QuestionPage: React.FC<IQuestionPage> = ({ value, onSubmit }) => (
               dignissimos sapiente culpa mollitia dolore voluptatem. Sequi, natus temporibus.
             </p>
           </div>
-        </div>
+        </section>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default QuestionPage;

@@ -1,9 +1,10 @@
 import Form from 'components/component/common/form';
+import { schemaRegistration } from 'helpers/validate';
 import React from 'react';
 import { IRegPage } from './interface';
 
 const RegistrationPage: React.FC<IRegPage> = ({ value, onSumbit }) => (
-  <div className="auth">
+  <section className="auth">
     <div className="auth__container">
       <Form
         initialValues={value}
@@ -29,11 +30,11 @@ const RegistrationPage: React.FC<IRegPage> = ({ value, onSumbit }) => (
             type: 'password',
           },
         ]}
-        schema={{}}
+        schema={schemaRegistration}
         onSubmit={onSumbit}
       />
     </div>
-  </div>
+  </section>
 );
 
 export default RegistrationPage;

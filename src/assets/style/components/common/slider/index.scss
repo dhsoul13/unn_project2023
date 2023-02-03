@@ -66,3 +66,78 @@
     }
   }
 }
+
+.slider-buttons {
+  cursor: pointer;
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    transition: $effect;
+    min-height: 50px;
+    justify-content: center;
+    gap: 5px 0px;
+    padding: 5px;
+    border: 1px solid $color-border;
+
+    &:hover {
+      border: 1px solid $color-main-1v;
+      transition: $effect;
+    }
+
+    &__slide.button {
+      min-height: 40px !important;
+      border: none !important;
+      &:hover {
+        border: none !important;
+        transition: $effect;
+      }
+    }
+  }
+}
+
+.slider-comment {
+  height: 250px;
+  cursor: pointer;
+
+  &__elem {
+    border: 1px solid $color-border;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    gap: 15px;
+    justify-content: space-between;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__elem-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-self: flex-end;
+    svg {
+      width: 70%;
+      height: 70%;
+      object-fit: cover;
+      fill: $color-border;
+      path {
+        fill: lighten(#000, 40);
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+  }
+
+  &__name {
+    margin: 20px 0px;
+    font-weight: 600;
+  }
+}

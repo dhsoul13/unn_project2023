@@ -1,0 +1,17 @@
+.accordion {
+  &__title {
+    font-weight: 700;
+    transition: $effect;
+  }
+
+  &:hover .accordion__title {
+    transition: $effect;
+    color: $color-main-2v;
+  }
+}
+
+.accordion.active {
+  .accordion__title {
+    color: $color-main-2v;
+  }
+}

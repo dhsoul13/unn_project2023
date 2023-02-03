@@ -6,17 +6,17 @@ export const footerLinks: IFooterContent = {
     {
       id: 0,
       title: 'О нас',
-      src: '',
+      src: 'info/about',
     },
     {
       id: 1,
       title: 'О доставке',
-      src: '',
+      src: 'info/delivery',
     },
     {
       id: 2,
       title: 'Задать вопрос',
-      src: '',
+      src: 'info/question',
     },
   ],
   src: [
@@ -57,17 +57,17 @@ export const footerLinks: IFooterContent = {
     {
       id: 0,
       title: 'Магазин',
-      src: '',
+      src: 'shop',
     },
     {
       id: 1,
       title: 'Спецальные предложения',
-      src: '',
+      src: '#sale',
     },
     {
       id: 2,
       title: 'Наши партнеры',
-      src: '',
+      src: '#company',
     },
   ],
 };

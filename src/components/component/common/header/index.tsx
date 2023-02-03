@@ -12,7 +12,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="header__container container">
         <div className="header__content">
           <div
@@ -22,7 +22,7 @@ const Header = () => {
             }}>
             <Logo />
           </div>
-          <div className="header__info">
+          <nav className="header__info">
             <ul className="header__links">
               <li
                 className="header__link link"
@@ -72,10 +72,10 @@ const Header = () => {
                 <User />
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

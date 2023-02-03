@@ -3,8 +3,8 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 
 const InfoPage = () => (
-  <div className="infopage">
-    <div className="infopage__header">
+  <section className="infopage">
+    <nav className="infopage__header">
       <DefaultLayout
         title={'Информация'}
         elements={[
@@ -17,8 +17,8 @@ const InfoPage = () => (
             displayName: 'Наши магазины',
           },
           {
-            src: 'delivery',
-            displayName: 'Доставка',
+            src: 'reviews',
+            displayName: 'Отзывы',
           },
           {
             src: 'question',
@@ -26,11 +26,11 @@ const InfoPage = () => (
           },
         ]}
       />
-    </div>
-    <div className="infopage__body">
+    </nav>
+    <section className="infopage__body">
       <Outlet />
-    </div>
-  </div>
+    </section>
+  </section>
 );
 
 export default InfoPage;

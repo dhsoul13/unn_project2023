@@ -14,9 +14,10 @@ interface IMainProduct {
   discount: Array<any>;
   changeBrend: (param: string) => void;
   data: Array<any>;
+  map: Array<any>;
 }
 
-const MainPage: React.FC<IMainProduct> = ({ discount, changeBrend, data }) => {
+const MainPage: React.FC<IMainProduct> = ({ discount, changeBrend, data, map }) => {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
 
@@ -41,10 +42,10 @@ const MainPage: React.FC<IMainProduct> = ({ discount, changeBrend, data }) => {
               </div>
             </div>
             <div className="main__first-right">
-              <LazyLoadImage alt="IPhone 13" src={Img} effect="blur" />
+              <LazyLoadImage src={Img} effect="blur" />
             </div>
           </div>
-          <div className="main__second sector">
+          <div className="main__second sector" id="sale">
             <div className="main__second-header">
               <h2 className="main__second-title title">Скидки в нашем магазине:</h2>
               <div className="main__second-buttons">
@@ -64,7 +65,7 @@ const MainPage: React.FC<IMainProduct> = ({ discount, changeBrend, data }) => {
                 type="discount"
               />
             </div>
-            <div className="main__third-slider sector">
+            <div className="main__third-slider sector" id="company">
               <h2 className="main__third-title title">Бренды в нашем магазине:</h2>
               <ButtonsList
                 data={[
@@ -93,7 +94,7 @@ const MainPage: React.FC<IMainProduct> = ({ discount, changeBrend, data }) => {
             </div>
 
             <div className="main__four-slider sector">
-              <MapContent title={'Наши локации'} />
+              <MapContent title={'Наши локации'} data={map} />
             </div>
           </div>
         </div>

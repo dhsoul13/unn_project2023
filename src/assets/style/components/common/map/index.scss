@@ -4,5 +4,19 @@
 
   &__header {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__search {
+    display: flex;
+    height: 25px;
+    justify-content: end;
+    .search {
+      width: 300px;
+    }
+    margin-bottom: 20px;
+  }
+  &__slider {
+    margin-bottom: 25px;
   }
 }

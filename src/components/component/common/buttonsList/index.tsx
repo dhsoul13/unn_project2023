@@ -5,8 +5,8 @@ import { IButtonsList, TDataButtonList } from './interface';
 
 const ButtonsList: React.FC<IButtonsList> = ({ data, onClick }) => (
   <ul className="buttonlist">
-    {data.map((el: TDataButtonList) => (
-      <li className="buttonlist__elem">
+    {data.map((el: TDataButtonList, index) => (
+      <li className="buttonlist__elem" key={index}>
         <Button
           text={el.title}
           type={EButton.button}

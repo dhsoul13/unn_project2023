@@ -5,7 +5,17 @@ import { IProduct } from './interface';
 
 const ShopContainer: React.FC = () => {
   const { data, loading } = useRequestData<IProduct>('http://localhost:5005/product');
+  const set = () => {
+    console.log('add');
+  };
 
+  useEffect(() => {
+    document.addEventListener('click', set);
+
+    return () => {
+      document.removeEventListener('click', set);
+    };
+  }, []);
   return (
     <>
       <ShopPage data={data} loading={loading} />

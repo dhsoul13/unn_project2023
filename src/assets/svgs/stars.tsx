@@ -2,12 +2,7 @@ import React from 'react';
 
 const Start = () => (
   <>
-    <svg
-      width="8px"
-      height="8px"
-      viewBox="0 0 20 20"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg">
+    <svg width="8" height="8" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <g
         id="Free-Icons"
         stroke="none"

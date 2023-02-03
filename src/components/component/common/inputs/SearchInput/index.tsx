@@ -1,12 +1,32 @@
 import Search from 'assets/svgs/search';
-import React from 'react';
+import React, { useState } from 'react';
 import { ISearchInput } from './interface';
 
 const SearchInput: React.FC<ISearchInput> = ({ value, onChange, exit }) => {
-  console.log(value);
+  const [showSearchDisplay, setShowSearchDisplay] = useState<boolean>(false);
+
+  const handlerFocus = () => {
+    setShowSearchDisplay(true);
+  };
+
+  const handlerBlur = () => {
+    setShowSearchDisplay(false);
+  };
 
   return (
     <div className="search">
+      {showSearchDisplay ? (
+        <>
+          {' '}
+          <div className="search__result">
+            <ul>
+              <li>1313</li>
+            </ul>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
       <input
         type={'text'}
         className={'search__input'}
@@ -14,6 +34,8 @@ const SearchInput: React.FC<ISearchInput> = ({ value, onChange, exit }) => {
         onChange={(e) => {
           onChange(e.target.value);
         }}
+        onFocus={handlerFocus}
+        onBlur={handlerBlur}
       />
       <div className="search__icon">
         {value === '' ? (

@@ -10,7 +10,7 @@ const DefaultLayout: React.FC<IDefaultLayout> = ({ title, elements }) => (
       <div className="centerLayout__content">
         <div className="centerLayout__header">
           <BreadCrumbs />
-          <h2 className="centerLayout__title">{title}</h2>
+          <h2 className="centerLayout__title title">{title}</h2>
         </div>
         <div className="centerLayout__body">
           <ul className="centerLayout__list">

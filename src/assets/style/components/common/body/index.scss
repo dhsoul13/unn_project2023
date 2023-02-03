@@ -5,4 +5,53 @@
   &__content {
     flex: auto;
   }
+  &__top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+
+    flex-direction: column;
+    align-items: center;
+    transition: $effect;
+
+    &:hover {
+      .body__svg {
+        svg {
+          path {
+            fill: $color-main-1v;
+            transition: $effect;
+          }
+        }
+      }
+      .body__title {
+        color: $color-main-1v;
+        transition: $effect;
+      }
+    }
+  }
+
+  &__top.show {
+    display: flex !important;
+  }
+
+  &__top.disble {
+    display: none !important;
+  }
+
+  &__top &__svg {
+    transform: rotate(-90deg);
+    svg {
+      path {
+        fill: $color-border;
+      }
+    }
+  }
+  &__title {
+    font-size: $s18;
+  }
+
+  &.isActive {
+    overflow: hidden;
+  }
 }

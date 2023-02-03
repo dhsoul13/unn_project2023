@@ -6,6 +6,7 @@ interface Input {
   placeholder: string;
   title: string;
   type?: string;
+  textarea?: boolean;
 }
 
 interface ICheckBox {

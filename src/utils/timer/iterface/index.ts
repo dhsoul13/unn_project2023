@@ -1,4 +1,4 @@
 export interface ITimer {
-  callback: () => any;
+  callback: any;
   time: number;
 }

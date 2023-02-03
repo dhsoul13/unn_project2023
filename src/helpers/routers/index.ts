@@ -1,0 +1,18 @@
+export const router = {
+  main: '/',
+  shop: 'shop',
+  basket: 'basket',
+  like: 'like',
+  user: 'user',
+  info: 'info',
+  about: 'about',
+  ourshop: 'ourshop',
+  reviews: 'reviews',
+  question: 'question',
+  entrance: 'entrance',
+  auth: 'auth',
+  reg: 'reg',
+  error: '*',
+  search: 'search',
+  product: 'shop/:id',
+};

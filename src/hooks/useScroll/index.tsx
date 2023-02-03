@@ -1,5 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import { useEffect, useState } from 'react';
+import { scrollTo, scrollIntoView } from 'scroll-js';
 
 export const useScroll = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -9,8 +10,8 @@ export const useScroll = () => {
     setScrollPosition(position);
   };
 
-  const removeEventListener = () => {
-    window.removeEventListener('scroll', handlerScroll);
+  const scrollFormCoordinate = (cordinate: number) => {
+    scrollTo(window, { top: 0 });
   };
 
   useEffect(() => {
@@ -20,5 +21,5 @@ export const useScroll = () => {
     };
   }, []);
 
-  return { scrollPosition, removeEventListener };
+  return { scrollPosition, scrollFormCoordinate };
 };

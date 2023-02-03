@@ -13,7 +13,7 @@ const LeftLayout: React.FC<ILeftLayout> = ({ functional, children, title, classL
             </div>
             <h2 className={`${classList}__header-title  left-layout__header-title`}>{title}</h2>
           </div>
-          <div className={`${classList}__header-right left-layout__header-right`}>Назад</div>
+          <div className={`${classList}__header-right left-layout__header-right`}>сортировка</div>
         </div>
         <div className={`${classList}__body left-layout__body`}>
           <div className={`${classList}__functionals left-layout__functionals`}>{functional}</div>

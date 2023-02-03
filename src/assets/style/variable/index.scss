@@ -2,6 +2,8 @@ $color-main-1v: #4e8eff;
 $color-main-2v: #003ba3;
 $color-second: #ffffff;
 $color-war: rgb(165, 42, 42);
+$color-border: rgb(219, 219, 219);
+$color-succes: rgb(62, 165, 62);
 
 $s16: 1rem;
 $s18: 1.125rem;
@@ -21,6 +23,7 @@ $size-1140: 1140px;
 ///общие классы
 .container {
   width: $size-1140;
+
   margin: auto;
 }
 
@@ -32,6 +35,16 @@ $size-1140: 1140px;
   &:hover {
     color: $color-main-2v;
   }
+}
+
+.title {
+  font-size: $s20;
+  font-weight: 700;
+}
+
+.sector {
+  margin: 50px 0px;
+  min-height: 200px;
 }
 
 .effects {

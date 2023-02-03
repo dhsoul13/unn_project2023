@@ -41,6 +41,10 @@ const helpersMas: Array<{
     name: 'reg',
     rusname: 'Регистрация',
   },
+  {
+    name: 'search',
+    rusname: 'Поиск',
+  },
 ];
 
 /* eslint-disable import/prefer-default-export */
@@ -58,7 +62,7 @@ export const GetStrBreadCrumbs = ({ str, navigate }: { str: string; navigate: an
         }}>
         Главная
       </li>
-      {mas.map((el, index) => (
+      {mas.map((el: any, index) => (
         <li className="breadcrumbs__item" key={index}>
           <div>
             <Arrows />

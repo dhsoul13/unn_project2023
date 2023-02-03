@@ -1,10 +1,10 @@
 import React from 'react';
 
 const AboutPage = () => (
-  <div className="about">
+  <article className="about">
     <div className="about__container container">
       <div className="about__content">
-        <h2 className="about__title">Описание нашей компании</h2>
+        <h2 className="about__title title">Описание нашей компании</h2>
         <div className="about__info">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos unde sequi sit rerum dolores
           inventore cumque officiis non eos doloribus vero officia deserunt, repellat et nobis
@@ -27,7 +27,7 @@ const AboutPage = () => (
         </ul>
       </div>
     </div>
-  </div>
+  </article>
 );
 
 export default AboutPage;

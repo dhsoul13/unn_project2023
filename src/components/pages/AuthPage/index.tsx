@@ -4,7 +4,7 @@ import React from 'react';
 import { IAuthPage } from './interface';
 
 const AuthPage: React.FC<IAuthPage> = ({ value, onSubmit }) => (
-  <div className="auth">
+  <section className="auth">
     <div className="auth__container">
       <Form
         initialValues={{}}
@@ -46,7 +46,7 @@ const AuthPage: React.FC<IAuthPage> = ({ value, onSubmit }) => (
         onSubmit={onSubmit}
       />
     </div>
-  </div>
+  </section>
 );
 
 export default AuthPage;

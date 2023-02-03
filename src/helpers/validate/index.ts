@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import * as yup from 'yup';
 
 const phoneRegExp =
@@ -19,4 +18,17 @@ export const schemaAuth = yup.object().shape({
     .string()
     .oneOf([yup.ref('password'), null], 'Пароль не похож')
     .required('Объязательное поле'),
+});
+
+export const schemaRegistration = yup.object().shape({
+  email: yup.string().email('Не валидный email').required('Объязательное поле'),
+  password: yup.string().required('Объязательное поле').min(8, 'Пароль слишком короткий'),
+  passwordСheck: yup
+    .string()
+    .oneOf([yup.ref('password'), null], 'Пароль не похож')
+    .required('Объязательное поле'),
+});
+
+export const schemaReviws = yup.object().shape({
+  text: yup.string(),
 });

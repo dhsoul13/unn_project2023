@@ -24,10 +24,11 @@
       },
       "property": {
         "color": {
-          "title": "Черный",
+          "title": "black",
           "codeColor": "#000000"
         },
-        "storage": 32
+        "storage": 32,
+        "ram": 8
       }
     },
     {
@@ -54,10 +55,11 @@
       },
       "property": {
         "color": {
-          "title": "Черный",
+          "title": "black",
           "codeColor": "#000000"
         },
-        "storage": 32
+        "storage": 32,
+        "ram": 8
       }
     },
     {
@@ -84,10 +86,11 @@
       },
       "property": {
         "color": {
-          "title": "Черный",
+          "title": "black",
           "codeColor": "#000000"
         },
-        "storage": 32
+        "storage": 32,
+        "ram": 8
       }
     },
     {
@@ -114,10 +117,11 @@
       },
       "property": {
         "color": {
-          "title": "Черный",
+          "title": "black",
           "codeColor": "#000000"
         },
-        "storage": 32
+        "storage": 32,
+        "ram": 8
       }
     },
     {
@@ -144,11 +148,30 @@
       },
       "property": {
         "color": {
-          "title": "Черный",
+          "title": "black",
           "codeColor": "#000000"
         },
-        "storage": 32
+        "storage": 32,
+        "ram": 8
       }
+    }
+  ],
+  "location": [
+    {
+      "id": 0,
+      "address_title": "г. Нижний Новгород, проспект Кирова"
+    },
+    {
+      "id": 1,
+      "address_title": "г. Нижний Новгород, проспект Кирова"
+    },
+    {
+      "id": 2,
+      "address_title": "г. Нижний Новгород, проспект Кирова"
+    },
+    {
+      "id": 3,
+      "address_title": "г. Нижний Новгород, проспект Кирова"
     }
   ]
 }

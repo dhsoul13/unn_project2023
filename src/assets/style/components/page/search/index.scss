@@ -1,0 +1,40 @@
+.search {
+  height: 100%;
+  &__container {
+    height: 100%;
+  }
+  &__header {
+    h2 {
+      margin: 20px 0px;
+    }
+  }
+  &__content {
+    height: inherit;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+  }
+
+  &__left {
+    // align-self: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+  }
+  &__item {
+    padding: 15px;
+    border: 1px solid $color-border;
+    border-radius: 5px;
+  }
+  &__item-header {
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  &__item-body {
+    font-weight: 300;
+  }
+}

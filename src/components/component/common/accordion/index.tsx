@@ -8,9 +8,12 @@ const AccordionContainer: React.FC<IAccordionContainer> = ({ children, title }) 
     setOpen((prev) => !prev);
   };
   return (
-    <Accordion expanded={open} onChange={handlerClick}>
-      <AccordionSummary>{title}</AccordionSummary>
-      <AccordionActions>{children}</AccordionActions>
+    <Accordion
+      expanded={open}
+      onChange={handlerClick}
+      className={`accordion ${open ? 'active' : ''}`}>
+      <AccordionSummary className="accordion__title">{title}</AccordionSummary>
+      <AccordionActions className="accordion__body">{children}</AccordionActions>
     </Accordion>
   );
 };

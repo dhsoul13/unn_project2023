@@ -1,13 +1,8 @@
-import { schemaReviws } from 'helpers/validate';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { deleteModal } from 'store/reducers/modalreducer';
-import Form from '../form';
-import Stars from '../stars';
 
-const ModalWindow = ({ text, title, form }: any) => {
-  const [stars, setStars] = useState<number | null>(2);
-
+const ModalWindow = ({ text, title, children }: any) => {
   const dispath = useDispatch();
   return (
     <div className="modal">
@@ -28,32 +23,7 @@ const ModalWindow = ({ text, title, form }: any) => {
           <section className="modal__body">
             <p className="modal__text">{text}</p>
             <article className="modal__form">
-              {form ? (
-                <Form
-                  initialValues={{}}
-                  inputs={[
-                    {
-                      id: 'text',
-                      name: 'text',
-                      placeholder: 'написать отзыв',
-                      title: '',
-                      textarea: true,
-                    },
-                  ]}
-                  schema={schemaReviws}
-                  onSubmit={(value, actions) => {
-                    // eslint-disable-next-line no-alert
-                    alert(JSON.stringify({ ...value, stars }));
-
-                    dispath(deleteModal());
-                  }}>
-                  <>
-                    <Stars value={stars} onChange={setStars} />
-                  </>
-                </Form>
-              ) : (
-                <></>
-              )}
+              <>{children}</>
             </article>
           </section>
         </section>

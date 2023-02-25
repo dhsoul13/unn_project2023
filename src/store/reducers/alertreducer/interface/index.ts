@@ -10,3 +10,8 @@ export interface IValueAlertReducer {
   status: EAlertReducer;
   text: string;
 }
+
+export interface IAlertAction {
+  status: EAlertReducer;
+  text: string;
+}

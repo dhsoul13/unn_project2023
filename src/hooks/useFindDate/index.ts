@@ -6,9 +6,7 @@ type TUseFindDate = [string, any, any];
 export const useFindDate = (): TUseFindDate => {
   const [find, setFind] = useState<string>('');
 
-  useEffect(() => {
-    console.log(find);
-  }, [find]);
+  useEffect(() => {}, [find]);
 
   const handlerChange = (value: string) => {
     setFind(value);

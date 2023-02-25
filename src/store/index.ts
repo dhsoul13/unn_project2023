@@ -1,13 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { IReducer } from './interface';
+import { reducers } from './reducers';
 import alertreducer from './reducers/alertreducer';
 import modalreducer from './reducers/modalreducer';
 
-const store = configureStore<IReducer>({
+export const store = configureStore({
   reducer: {
-    alert: alertreducer,
-    modal: modalreducer,
+    ...reducers,
   },
 });
 
-export default store;
+export type RootStateType = ReturnType<typeof store.getState>;

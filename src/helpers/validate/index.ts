@@ -32,3 +32,7 @@ export const schemaRegistration = yup.object().shape({
 export const schemaReviws = yup.object().shape({
   text: yup.string(),
 });
+
+export const schemaSerch = yup.object().shape({
+  search: yup.string(),
+});

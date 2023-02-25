@@ -1,0 +1,10 @@
+.stars {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stars__content {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */

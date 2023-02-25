@@ -12,18 +12,17 @@ export interface IProduct {
   count: number;
   brand: string;
   tegs: string[];
-  raiting: number[];
   reviews: IReviews[];
   imgs: string[];
+  color: {
+    title: string;
+    codeColor: string;
+  };
   discount: {
     isDiscount: boolean;
     count: number;
   };
   property: {
     storage: number;
-    color: {
-      title: string;
-      codeColor: string;
-    };
   };
 }

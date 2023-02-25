@@ -1,14 +1,17 @@
-type TFormModal = Array<{
-  name: string;
-  id: string;
-  placeholder: string;
-  title: string;
-  type?: string;
-}>;
+/* eslint-disable no-shadow */
+export enum ETypeModal {
+  rewiews = 'rewiews',
+  news = 'news',
+  none = 'none',
+}
 
 export interface IValueModalReducer {
   isActiveModal: boolean;
-  title: string;
-  text: string;
-  form: boolean;
+  typeActiveModal: ETypeModal;
+  content?: any;
+}
+
+export interface IModalAction {
+  type: ETypeModal;
+  content: any;
 }

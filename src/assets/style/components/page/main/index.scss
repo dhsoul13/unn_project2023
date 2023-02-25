@@ -33,39 +33,4 @@
       height: 100%;
     }
   }
-  &__second-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
-  &__second-buttons {
-    display: flex;
-    gap: 0px 5px;
-    :first-child {
-      svg {
-        transform: rotate(180deg);
-      }
-    }
-  }
-  &__second-title {
-    margin-bottom: 20px;
-  }
-  &__second-button {
-    padding: 15px 20px;
-    background-color: $color-main-1v;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: $effect;
-    &:hover {
-      transition: $effect;
-      background-color: $color-main-2v;
-    }
-    &:active {
-      transition: $effect;
-      background-color: $color-main-2v;
-    }
-  }
 }

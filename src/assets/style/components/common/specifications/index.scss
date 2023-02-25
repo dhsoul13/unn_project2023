@@ -1,0 +1,34 @@
+.specifications {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__all {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
+  &__table {
+    border-collapse: collapse;
+    width: calc(min(700px, 90%));
+  }
+  &__elem {
+    height: 25px;
+  }
+  &__key {
+    font-weight: 700;
+  }
+  &__buttons {
+    button {
+      padding: 10px 12px;
+      font-weight: 700;
+    }
+  }
+}
+
+.specifications__elem:nth-child(2n) {
+  background-color: $color-border;
+}

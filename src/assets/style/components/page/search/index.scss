@@ -21,20 +21,14 @@
   }
 
   &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    margin-bottom: 20px;
+  }
+  &__pagination {
     display: flex;
-    flex-direction: column;
-    gap: 10px 0px;
-  }
-  &__item {
-    padding: 15px;
-    border: 1px solid $color-border;
-    border-radius: 5px;
-  }
-  &__item-header {
-    margin-bottom: 10px;
-    font-weight: 700;
-  }
-  &__item-body {
-    font-weight: 300;
+    justify-content: flex-end;
   }
 }

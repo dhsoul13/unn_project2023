@@ -1,6 +1,7 @@
 import { IProduct } from '../../../containers/ShopContainer/interface';
 
 export interface IProductProbs {
-  data?: IProduct[];
+  data: IProduct[];
   loading?: boolean;
+  showReturn: boolean;
 }

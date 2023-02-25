@@ -1,0 +1,34 @@
+.reviewscontent {
+  &__inform {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px 0px;
+  }
+
+  &__elems {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px 0px;
+  }
+
+  &__elem {
+    padding: 10px 10px;
+    border: 1px solid $color-border;
+    min-height: 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+  }
+  &__btn-rev {
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    button {
+      width: 200px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.product {
+  &__main-info {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: 400px;
+    gap: 50px;
+  }
+  &__info-price {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: right;
+  }
+  &__info-text {
+    font-size: $s18;
+    font-weight: 400;
+  }
+  &__info-title {
+    margin: 40px 0px 25px 0px;
+    font-size: 28px;
+  }
+  &__info-spechial {
+    min-height: 50px;
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
+  &__info-container {
+    margin-bottom: 20px;
+  }
+  &__price-info {
+    margin-top: 5px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__info-price.sale {
+    color: $color-war;
+  }
+  &__block-sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    background-color: $color-main-1v;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: $s25;
+    border-radius: 0px 0px 0px 8px;
+  }
+  &__info {
+    position: relative;
+  }
+
+  &__like {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: $effect;
+    &:hover {
+      svg {
+        transition: $effect;
+        path {
+          fill: $color-main-2v;
+        }
+      }
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+}
+
+.spechial-title {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  span {
+    font-weight: 400;
+  }
+}

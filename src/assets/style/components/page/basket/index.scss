@@ -1,0 +1,21 @@
+.basket {
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 400px;
+    gap: 20px;
+  }
+  &__order {
+    display: grid;
+    grid-template-columns: 500px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+  }
+  &__list {
+    margin-bottom: 20px;
+  }
+  &__pagination {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

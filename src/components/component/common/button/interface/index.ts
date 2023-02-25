@@ -8,4 +8,5 @@ export interface IButton {
   text: string;
   type: EButton;
   onClick?: () => any;
+  disabled?: boolean;
 }

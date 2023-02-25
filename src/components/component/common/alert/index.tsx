@@ -1,8 +1,8 @@
 /* eslint-disable default-case */
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { IReducer } from 'store/interface';
 import { closeAlert } from 'store/reducers/alertreducer';
+import { getAlertSelection } from 'store/reducers/alertreducer/selection';
 
 function getTextForTitle(status: string) {
   switch (status) {
@@ -34,7 +34,7 @@ function getTextForTitle(status: string) {
 }
 
 const AlertCustom = () => {
-  const { text, status } = useSelector((state: IReducer) => state.alert);
+  const { text, status } = useSelector(getAlertSelection);
 
   const dispath = useDispatch();
 

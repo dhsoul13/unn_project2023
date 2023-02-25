@@ -1,69 +1,105 @@
 .slider-main {
-  cursor: pointer;
+  min-height: 300px;
+  width: 100%;
+  margin-top: 20px;
+
   &__slide {
-    border: 1px solid;
-    border-radius: 0px 0px 10px 10px;
-    border-color: gainsboro;
-  }
-  &__img {
-    height: 300px;
-    display: flex;
-    align-items: center;
+    cursor: pointer;
+    padding: 10px 0px;
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    grid-template-columns: 1fr;
+    width: 100%;
     justify-content: center;
+    gap: 10px 0px;
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
     span {
-      padding: 10px;
+      height: 100%;
+    }
+    img {
       height: 100%;
       width: 100%;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+      object-fit: cover;
+
+      &:hover {
       }
     }
   }
+
   &__slide-content {
+    justify-self: center;
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: $color-main-1v;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 0px 8px;
+    h2 {
+      margin-bottom: 0px;
+      color: #fff;
+    }
+  }
+
+  &__raiting {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: $color-main-1v;
+    border-radius: 0px 0px 0px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    svg {
+      width: 10px;
+      height: 10px;
+      g {
+        stroke: #fff;
+        fill: #fff;
+      }
+    }
+  }
+
+  .swiper-wrapper {
+    flex-grow: 1;
+  }
+}
+
+.slider-main-not {
+  &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px 0px;
-    position: relative;
-    margin: 20px 0px;
-  }
-  &__title {
-    font-size: $s18;
-    font-weight: 700;
-  }
-  &__not-sale {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 200px;
-    h2 {
-      font-weight: 700;
-      font-size: $s20;
-    }
-  }
-  &__text {
-    font-weight: 500;
-  }
-  &__text.discount {
-    color: brown;
-  }
-  &__sale {
-    position: absolute;
-    bottom: 0px;
-    right: 20px;
-    background-color: $color-main-1v;
-    border-radius: 50%;
-    color: white;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h2 {
-      font-weight: 500;
-    }
+    height: 300px;
   }
 }
 

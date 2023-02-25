@@ -2,7 +2,16 @@ import { Field } from 'formik';
 import React, { useState } from 'react';
 import { IInput } from '../interface';
 
-const Input: React.FC<IInput> = ({ placeholder, title, id, name, error, type, textarea }) => {
+const Input: React.FC<IInput> = ({
+  placeholder,
+  title,
+  id,
+  name,
+  error,
+  type,
+  textarea,
+  value,
+}) => {
   const [showPassword, setShowPassword] = useState(!!type);
 
   const handlerClick = () => {
@@ -23,6 +32,7 @@ const Input: React.FC<IInput> = ({ placeholder, title, id, name, error, type, te
               value={undefined}
               className={`input__input ${error ? 'isError' : ''}`}
               type={showPassword ? 'password' : 'text'}
+              defaultValue={value[name] || ''}
             />
             {type ? (
               <h3
@@ -45,6 +55,7 @@ const Input: React.FC<IInput> = ({ placeholder, title, id, name, error, type, te
               value={undefined}
               className={`input__textarea ${error ? 'isError' : ''}`}
               as={'textarea'}
+              defaultValue={value[name] || ''}
             />
           </>
         )}

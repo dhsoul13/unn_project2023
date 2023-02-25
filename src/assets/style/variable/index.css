@@ -13,6 +13,17 @@
   color: #003ba3;
 }
 
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sector {
+  margin: 50px 0px;
+  min-height: 200px;
+}
+
 .effects {
   cursor: pointer;
   transition: 0.5s ease all;

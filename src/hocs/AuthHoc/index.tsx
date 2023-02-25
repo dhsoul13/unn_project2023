@@ -4,10 +4,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { showAlert } from 'store/reducers/alertreducer';
 import { EAlertReducer } from 'store/reducers/alertreducer/interface';
 import { IReducer } from 'store/interface';
+import { getAuth } from 'store/reducers/authreducer/selection';
 import { IAuthHoc } from './interface';
 
 const AuthHoc: React.FC<IAuthHoc> = ({ children }) => {
-  const isAuth = false;
+  const isAuth = useSelector(getAuth);
   const dispatch = useDispatch();
 
   if (!isAuth) {

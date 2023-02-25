@@ -12,3 +12,7 @@
     background-color: $color-main-2v;
   }
 }
+
+.button:disabled {
+  filter: grayscale(100%);
+}

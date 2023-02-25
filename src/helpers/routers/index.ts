@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 export const router = {
   main: '/',
   shop: 'shop',
@@ -15,4 +16,6 @@ export const router = {
   error: '*',
   search: 'search',
   product: 'shop/:id',
+  panel: 'panel',
+  addProduct: 'panel/addProduct',
 };

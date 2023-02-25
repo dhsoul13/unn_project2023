@@ -5,6 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 const BreadCrumbs: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
+
   return (
     <div className="breadcrumbs">
       <GetStrBreadCrumbs str={location.pathname} navigate={navigate} />

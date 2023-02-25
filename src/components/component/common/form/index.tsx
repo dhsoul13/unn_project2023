@@ -20,7 +20,7 @@ const Form: React.FC<IForm> = ({ children, inputs, checkbox, initialValues, sche
       validateOnChange={false}>
       {(probs) => (
         <form onSubmit={probs.handleSubmit} className="form">
-          <h2 className="form__title">{children}</h2>
+          <div className="form__children">{children}</div>
           <div className="form__contents">
             <div className="form__inputs">
               {inputs?.map((el, index) => (
@@ -33,6 +33,7 @@ const Form: React.FC<IForm> = ({ children, inputs, checkbox, initialValues, sche
                     error={showError(probs.errors, el.id).isError}
                     type={el.type}
                     textarea={el.textarea}
+                    value={initialValues}
                   />
                   {showError(probs.errors, el.id).elem}
                 </div>

@@ -1,0 +1,22 @@
+.breadcrumbs__list {
+  display: flex;
+}
+.breadcrumbs__item {
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumbs__item svg {
+  margin: 0px 4px;
+  width: 10px;
+  height: 10px;
+}
+.breadcrumbs__item svg path {
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  fill: black;
+}/*# sourceMappingURL=index.css.map */

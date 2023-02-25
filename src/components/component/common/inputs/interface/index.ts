@@ -8,6 +8,7 @@ export interface IInput {
   error?: boolean;
   type?: string;
   textarea?: boolean;
+  value?: any;
 }
 
 export interface ICheckBox {

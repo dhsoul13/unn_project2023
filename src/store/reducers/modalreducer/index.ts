@@ -1,33 +1,28 @@
 /* eslint-disable no-param-reassign */
-import { createSlice } from '@reduxjs/toolkit';
-import { IValueModalReducer } from './interface';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { ETypeModal, IModalAction, IValueModalReducer } from './interface';
 
 const initialState: IValueModalReducer = {
   isActiveModal: false,
-  title: '',
-  text: '',
-  form: false,
+  typeActiveModal: ETypeModal.none,
+  content: '',
 };
 
 const modalreducer = createSlice({
   name: 'modal',
   initialState,
   reducers: {
-    showModal(state, action) {
+    showModal(state, action: PayloadAction<IModalAction>) {
       state.isActiveModal = true;
-      state.title = action.payload.title;
-      state.text = action.payload.text;
-      state.form = action.payload.form;
+      state.typeActiveModal = action.payload.type;
+      state.content = action.payload.content;
     },
     deleteModal(state) {
       state.isActiveModal = false;
-      state.title = '';
-      state.text = '';
-      state.form = false;
     },
   },
 });
 
 export const { showModal, deleteModal } = modalreducer.actions;
-
+export const { name: ModalName } = modalreducer;
 export default modalreducer.reducer;

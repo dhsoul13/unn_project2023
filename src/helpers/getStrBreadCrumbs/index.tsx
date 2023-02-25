@@ -45,6 +45,22 @@ const helpersMas: Array<{
     name: 'search',
     rusname: 'Поиск',
   },
+  {
+    name: 'like',
+    rusname: 'Избранные товары',
+  },
+  {
+    name: 'basket',
+    rusname: 'Корзина',
+  },
+  {
+    name: 'panel',
+    rusname: 'Панель управления',
+  },
+  {
+    name: 'addProduct',
+    rusname: 'Добавить товар',
+  },
 ];
 
 /* eslint-disable import/prefer-default-export */

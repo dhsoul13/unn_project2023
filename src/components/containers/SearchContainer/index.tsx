@@ -1,10 +1,15 @@
 import SearchPage from 'components/pages/SearchPage';
-import React from 'react';
+import { useSerch } from 'hooks/useSerch';
+import React, { useEffect } from 'react';
 
-const SearchContainer = () => (
-  <>
-    <SearchPage />
-  </>
-);
+const SearchContainer = () => {
+  const [handlerSerchData, data] = useSerch();
+
+  return (
+    <>
+      <SearchPage data={data} handlerSerchData={handlerSerchData} />
+    </>
+  );
+};
 
 export default SearchContainer;

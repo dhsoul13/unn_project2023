@@ -1,24 +1,27 @@
-import React, { useEffect } from 'react';
-import useRequestData from '../../../hooks/useRequestDate';
+import { useRaitingCount } from 'hooks/useRaitingCount';
+import React, { useEffect, useState } from 'react';
+import { useParams, useSearchParams } from 'react-router-dom';
 import ShopPage from '../../pages/ShopPage';
-import { IProduct } from './interface';
 
 const ShopContainer: React.FC = () => {
-  const { data, loading } = useRequestData<IProduct>('http://localhost:5005/product');
-  const set = () => {
-    console.log('add');
-  };
+  const [searchParams, setSearchParams] = useSearchParams();
+  const { loading, raitingObj, resultDate } = useRaitingCount({});
+  const [showReturn, setShowReturn] = useState(false);
+
+  const src = searchParams.get('filter');
 
   useEffect(() => {
-    document.addEventListener('click', set);
+    if (src) {
+      setShowReturn(true);
+      console.log(JSON.parse(src));
+    } else {
+      setShowReturn(false);
+    }
+  }, [src]);
 
-    return () => {
-      document.removeEventListener('click', set);
-    };
-  }, []);
   return (
     <>
-      <ShopPage data={data} loading={loading} />
+      <ShopPage data={resultDate} loading={loading} showReturn={showReturn} />
     </>
   );
 };

@@ -1,0 +1,14 @@
+.map__content {
+  display: grid;
+  grid-template-columns: minmax(100px, 400px) 1fr;
+  gap: 0px 20px;
+  align-items: center;
+}
+.map__body {
+  height: 500px;
+  width: 100%;
+  background-color: rgb(242, 239, 239);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=index.css.map */

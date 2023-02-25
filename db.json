@@ -5,155 +5,234 @@
       "type": "smartphone",
       "title": "IPhone 10",
       "price": 40000,
-      "count": 13,
+      "count": 0,
       "brand": "apple",
       "model": "10",
       "tegs": ["apple"],
-      "raiting": 3.4,
-      "reviews": [
-        {
-          "id": 0,
-          "user": 0,
-          "text": "ireofjdkfj"
-        }
-      ],
       "imgs": [],
       "discount": {
         "isDiscount": true,
         "count": 10
       },
+      "color": {
+        "title": "black",
+        "codeColor": "#000000"
+      },
       "property": {
-        "color": {
-          "title": "black",
-          "codeColor": "#000000"
-        },
         "storage": 32,
-        "ram": 8
-      }
+        "ram": 8,
+        "batteryCapacity": 5000,
+        "madeIn": "USE"
+      },
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et in error enim necessitatibus adipisci distinctio inventore harum esse expedita, laborum ipsum repudiandae deleniti temporibus quos, eveniet ex neque totam."
     },
     {
       "id": 1,
       "type": "smartphone",
       "title": "IPhone 11",
-      "price": 55000,
-      "brand": "apple",
+      "price": 40000,
       "count": 13,
-      "model": "11",
-      "tegs": ["apple"],
-      "raiting": 3.4,
-      "reviews": [
-        {
-          "id": 0,
-          "user": 0,
-          "text": "ireofjdkfj"
-        }
-      ],
-      "imgs": [],
-      "discount": {
-        "isDiscount": true,
-        "count": 15
-      },
-      "property": {
-        "color": {
-          "title": "black",
-          "codeColor": "#000000"
-        },
-        "storage": 32,
-        "ram": 8
-      }
-    },
-    {
-      "id": 2,
-      "type": "smartphone",
-      "title": "IPhone 11 Pro",
-      "model": "11 Pro",
-      "price": 90000,
       "brand": "apple",
+      "model": "10",
       "tegs": ["apple"],
-      "count": 13,
-      "raiting": 3.4,
-      "reviews": [
-        {
-          "id": 0,
-          "user": 0,
-          "text": "ireofjdkfj"
-        }
-      ],
-      "imgs": [],
-      "discount": {
-        "isDiscount": true,
-        "count": 30
-      },
-      "property": {
-        "color": {
-          "title": "black",
-          "codeColor": "#000000"
-        },
-        "storage": 32,
-        "ram": 8
-      }
-    },
-    {
-      "id": 3,
-      "type": "smartphone",
-      "title": "IPhone 12",
-      "model": "12",
-      "price": 60000,
-      "brand": "apple",
-      "tegs": ["apple"],
-      "count": 13,
-      "raiting": 3.4,
-      "reviews": [
-        {
-          "id": 0,
-          "user": 0,
-          "text": "ireofjdkfj"
-        }
-      ],
-      "imgs": [],
-      "discount": {
-        "isDiscount": true,
-        "count": 45
-      },
-      "property": {
-        "color": {
-          "title": "black",
-          "codeColor": "#000000"
-        },
-        "storage": 32,
-        "ram": 8
-      }
-    },
-    {
-      "id": 4,
-      "type": "smartphone",
-      "title": "IPhone 12 Pro",
-      "model": "12 Pro",
-      "price": 100000,
-      "brand": "apple",
-      "tegs": ["apple"],
-      "raiting": 3.4,
-      "count": 13,
-      "reviews": [
-        {
-          "id": 0,
-          "user": 0,
-          "text": "ireofjdkfj"
-        }
-      ],
       "imgs": [],
       "discount": {
         "isDiscount": true,
         "count": 10
       },
+      "color": {
+        "title": "black",
+        "codeColor": "#000000"
+      },
       "property": {
-        "color": {
-          "title": "black",
-          "codeColor": "#000000"
-        },
         "storage": 32,
-        "ram": 8
-      }
+        "ram": 8,
+        "batteryCapacity": 5000,
+        "madeIn": "USE"
+      },
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et in error enim necessitatibus adipisci distinctio inventore harum esse expedita, laborum ipsum repudiandae deleniti temporibus quos, eveniet ex neque totam."
+    },
+    {
+      "id": 2,
+      "type": "smartphone",
+      "title": "IPhone 11",
+      "price": 40000,
+      "count": 13,
+      "brand": "apple",
+      "model": "10",
+      "tegs": ["apple"],
+      "imgs": [],
+      "discount": {
+        "isDiscount": true,
+        "count": 10
+      },
+      "color": {
+        "title": "black",
+        "codeColor": "#000000"
+      },
+      "property": {
+        "storage": 32,
+        "ram": 8,
+        "batteryCapacity": 5000,
+        "madeIn": "USE"
+      },
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et in error enim necessitatibus adipisci distinctio inventore harum esse expedita, laborum ipsum repudiandae deleniti temporibus quos, eveniet ex neque totam."
+    },
+    {
+      "id": 3,
+      "type": "smartphone",
+      "title": "IPhone 12",
+      "price": 40000,
+      "count": 13,
+      "brand": "apple",
+      "model": "10",
+      "tegs": ["apple"],
+      "imgs": [],
+      "discount": {
+        "isDiscount": true,
+        "count": 10
+      },
+      "color": {
+        "title": "black",
+        "codeColor": "#000000"
+      },
+      "property": {
+        "storage": 32,
+        "ram": 8,
+        "batteryCapacity": 5000,
+        "madeIn": "USE"
+      },
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et in error enim necessitatibus adipisci distinctio inventore harum esse expedita, laborum ipsum repudiandae deleniti temporibus quos, eveniet ex neque totam."
+    },
+    {
+      "id": 4,
+      "type": "smartphone",
+      "title": "IPhone 13",
+      "price": 40000,
+      "count": 13,
+      "brand": "apple",
+      "model": "10",
+      "tegs": ["apple"],
+      "imgs": [],
+      "discount": {
+        "isDiscount": true,
+        "count": 10
+      },
+      "color": {
+        "title": "black",
+        "codeColor": "#000000"
+      },
+      "property": {
+        "storage": 32,
+        "ram": 8,
+        "batteryCapacity": 5000,
+        "madeIn": "USE"
+      },
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et in error enim necessitatibus adipisci distinctio inventore harum esse expedita, laborum ipsum repudiandae deleniti temporibus quos, eveniet ex neque totam."
+    },
+    {
+      "id": 5,
+      "type": "smartphone",
+      "title": "IPhone 13",
+      "price": 40000,
+      "count": 13,
+      "brand": "apple",
+      "model": "10",
+      "tegs": ["apple"],
+      "imgs": [],
+      "discount": {
+        "isDiscount": true,
+        "count": 10
+      },
+      "color": {
+        "title": "black",
+        "codeColor": "#000000"
+      },
+      "property": {
+        "storage": 32,
+        "ram": 8,
+        "batteryCapacity": 5000,
+        "madeIn": "USE"
+      },
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et in error enim necessitatibus adipisci distinctio inventore harum esse expedita, laborum ipsum repudiandae deleniti temporibus quos, eveniet ex neque totam."
+    },
+    {
+      "id": 6,
+      "type": "smartphone",
+      "title": "IPhone 13",
+      "price": 40000,
+      "count": 13,
+      "brand": "apple",
+      "model": "10",
+      "tegs": ["apple"],
+      "imgs": [],
+      "discount": {
+        "isDiscount": true,
+        "count": 10
+      },
+      "color": {
+        "title": "black",
+        "codeColor": "#000000"
+      },
+      "property": {
+        "storage": 32,
+        "ram": 8,
+        "batteryCapacity": 5000,
+        "madeIn": "USE"
+      },
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et in error enim necessitatibus adipisci distinctio inventore harum esse expedita, laborum ipsum repudiandae deleniti temporibus quos, eveniet ex neque totam."
+    },
+    {
+      "id": 7,
+      "type": "accessories",
+      "title": "Чехол",
+      "price": 40000,
+      "count": 13,
+      "brand": "fukka",
+      "model": "10",
+      "tegs": ["apple"],
+      "imgs": [],
+      "discount": {
+        "isDiscount": false,
+        "count": 0
+      },
+      "color": {
+        "title": "black",
+        "codeColor": "#000000"
+      },
+      "property": {
+        "storage": 32,
+        "ram": 8,
+        "batteryCapacity": 5000,
+        "madeIn": "USE"
+      },
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et in error enim necessitatibus adipisci distinctio inventore harum esse expedita, laborum ipsum repudiandae deleniti temporibus quos, eveniet ex neque totam."
+    },
+    {
+      "id": 8,
+      "type": "accessories",
+      "title": "Чехол",
+      "price": 40000,
+      "count": 13,
+      "brand": "fukka",
+      "model": "10",
+      "tegs": ["apple"],
+      "imgs": [],
+      "discount": {
+        "isDiscount": false,
+        "count": 0
+      },
+      "color": {
+        "title": "black",
+        "codeColor": "#000000"
+      },
+      "property": {
+        "storage": 32,
+        "ram": 8,
+        "batteryCapacity": 5000,
+        "madeIn": "USE"
+      },
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et in error enim necessitatibus adipisci distinctio inventore harum esse expedita, laborum ipsum repudiandae deleniti temporibus quos, eveniet ex neque totam."
     }
   ],
   "location": [
@@ -172,6 +251,157 @@
     {
       "id": 3,
       "address_title": "г. Нижний Новгород, проспект Кирова"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 0,
+      "product_id": 0,
+      "user_id": 0,
+      "text": "lorem",
+      "raiting": 3.5
+    },
+    {
+      "id": 1,
+      "product_id": 0,
+      "user_id": 0,
+      "text": "lorem",
+      "raiting": 3.5
+    },
+    {
+      "id": 2,
+      "product_id": 0,
+      "user_id": 0,
+      "text": "lorem",
+      "raiting": 3.5
+    },
+    {
+      "id": 3,
+      "product_id": 0,
+      "user_id": 0,
+      "text": "lorem",
+      "raiting": 3.5
+    },
+    {
+      "id": 4,
+      "product_id": 0,
+      "user_id": 0,
+      "text": "lorem",
+      "raiting": 3.5
+    },
+    {
+      "id": 5,
+      "product_id": 0,
+      "user_id": 0,
+      "text": "lorem",
+      "raiting": 3.5
+    },
+    {
+      "id": 6,
+      "product_id": 0,
+      "user_id": 0,
+      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui modi maiores facere dignissimos dolore doloremque cupiditate. Consectetur eius perspiciatis facere magnam, a quis incidunt quae porro neque fugit vitae?",
+      "raiting": 3.5
+    },
+    {
+      "id": 7,
+      "product_id": 0,
+      "user_id": 0,
+      "text": "lorem",
+      "raiting": 3.5
+    },
+    {
+      "id": 8,
+      "product_id": 0,
+      "user_id": 0,
+      "text": "lorem",
+      "raiting": 3.5
+    },
+    {
+      "id": 9,
+      "product_id": 1,
+      "user_id": 0,
+      "text": "lorem",
+      "raiting": 5
+    },
+    {
+      "id": 10,
+      "product_id": 1,
+      "user_id": 0,
+      "text": "",
+      "raiting": 3.2
+    },
+    {
+      "id": 11,
+      "product_id": 2,
+      "user_id": 0,
+      "text": "",
+      "raiting": 3.2
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "username": "Даниил Мухреев",
+      "sex": "",
+      "isAdmin": false
+    }
+  ],
+  "like": [
+    {
+      "id": 0,
+      "product": [0, 1, 2, 3, 5]
+    },
+    {
+      "id": 1,
+      "product": [0, 1, 2]
+    },
+    {
+      "id": 3,
+      "product": [0]
+    }
+  ],
+  "news": [
+    {
+      "img": "",
+      "title": "Новые скидки",
+      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui modi maiores facere dignissimos dolore doloremque cupiditate. Consectetur eius perspiciatis facere magnam, a quis incidunt quae porro neque fugit vitae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui modi maiores facere dignissimos dolore doloremque cupiditate. Consectetur eius perspiciatis facere magnam, a quis incidunt quae porro neque fugit vitae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui modi maiores facere dignissimos dolore doloremque cupiditate. Consectetur eius perspiciatis facere magnam, a quis incidunt quae porro neque fugit vitae?  jsfjsfkjafkajfksajfkas",
+      "id": 0
+    },
+    {
+      "id": 1,
+      "title": "Новые скидки",
+      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui modi maiores facere dignissimos dolore doloremque cupiditate. Consectetur eius perspiciatis facere magnam, a quis incidunt quae porro neque fugit vitae?",
+      "img": ""
+    },
+    {
+      "id": "ab2260f8-7bf9-4d22-81fd-262fa97f1dde",
+      "img": "",
+      "title": "Новая запись",
+      "text": "хай пипл\n"
+    }
+  ],
+  "basket": [
+    {
+      "id": 0,
+      "product": [1, 2]
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "title": "apple",
+      "param": "apple"
+    },
+    {
+      "id": 2,
+      "title": "samsung",
+      "param": "samsung"
+    },
+    {
+      "id": 3,
+      "title": "sony",
+      "param": "sony"
     }
   ]
 }

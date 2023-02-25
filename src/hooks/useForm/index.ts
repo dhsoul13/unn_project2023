@@ -6,9 +6,7 @@ import { IUseForm } from './interface';
 export function useForm<T>({ values }: IUseForm<T>): [T, any] {
   const [data, setDate] = useState(values);
 
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
+  useEffect(() => {}, [data]);
 
   const onSubmit = (value: any, action: any) => {
     setDate(value);

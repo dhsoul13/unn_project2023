@@ -1,22 +1,16 @@
 .map {
   &__content {
+    display: grid;
+    grid-template-columns: minmax(100px, 400px) 1fr;
+    gap: 0px 20px;
+    align-items: center;
   }
-
-  &__header {
-    margin-bottom: 30px;
+  &__body {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(242, 239, 239);
     display: flex;
-    justify-content: space-between;
-  }
-  &__search {
-    display: flex;
-    height: 25px;
-    justify-content: end;
-    .search {
-      width: 300px;
-    }
-    margin-bottom: 20px;
-  }
-  &__slider {
-    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
   }
 }

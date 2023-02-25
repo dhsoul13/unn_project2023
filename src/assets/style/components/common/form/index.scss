@@ -28,6 +28,11 @@
     display: flex;
     flex-direction: column;
   }
+  &__errors {
+    margin: 5px 0px;
+    text-align: right;
+    color: $color-war;
+  }
 }
 
 .checkbox {

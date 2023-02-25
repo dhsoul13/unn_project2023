@@ -67,7 +67,7 @@ const Header = () => {
               <li
                 className="header__svg effects-svg"
                 onClick={() => {
-                  clickOnLinks({ path: '/user', callback: navigate });
+                  clickOnLinks({ path: '/panel', callback: navigate });
                 }}>
                 <User />
               </li>

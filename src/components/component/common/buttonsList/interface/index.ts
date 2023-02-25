@@ -1,6 +1,7 @@
 export type TDataButtonList = {
   title: string;
   img: string;
+  param: string;
 };
 
 export interface IButtonsList {
